@@ -50,7 +50,6 @@ def index(request):
 
 def post_detail(request, id):
     post = next((p for p in posts if p['id'] == id), None)
-    post['text']=post['text'].replace('\n','<br>')
     return render(request, 'blog/detail.html', {'post': post})
 
 
