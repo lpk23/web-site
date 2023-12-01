@@ -47,7 +47,11 @@
             <li>Дата: {{ post.date }}</li>
             <li>Категория: <a href="{% url 'blog:category_posts' category_slug=post.category %}">{{ post.category }}</a></li>
           </ul>         
+<<<<<<< HEAD
           <p>{{ post.text|safe }}</p>
+=======
+          <p>{{ post.text }}</p>
+>>>>>>> 4693d70 (final 2)
         </article>                
       </div>
     </main>
