@@ -46,8 +46,8 @@
             <li>Место: {{ post.location }}</li>
             <li>Дата: {{ post.date }}</li>
             <li>Категория: <a href="{% url 'blog:category_posts' category_slug=post.category %}">{{ post.category }}</a></li>
-          </ul>         
-          <p>{{ post.text|safe }}</p>
+          </ul>
+          <p>{{ post.text }}</p>
         </article>                
       </div>
     </main>
